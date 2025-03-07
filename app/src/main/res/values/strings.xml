@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BringIT</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="str_login_here">Login here.</string>
+    <string name="str_don_t_have_an_account_signup">Don’t have an account?</string>
+    <string name="str_access_your_controls">Access your controls</string>
 </resources>

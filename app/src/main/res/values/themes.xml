@@ -6,4 +6,109 @@
     </style>
 
     <style name="Theme.BringIT" parent="Base.Theme.BringIT" />
+
+
+    <!-- Base application theme. -->
+    <style name="Theme.Quotify" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white_q</item>
+        <item name="colorPrimaryVariant">@color/statusbar_q</item>
+        <item name="colorOnPrimary">@color/black_q</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black_q</item>
+        <item name="colorSecondaryVariant">@color/black_trans_50</item>
+        <item name="colorOnSecondary">@color/black_trans_50</item>
+        <!-- Status bar color. -->
+        <!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <!-- Customize your theme here. -->
+        <!--THEME -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowFullscreen">false</item>
+
+        <!--Dark Theme Status - Disabled Dark mode-->
+        <item name="android:forceDarkAllowed" tools:ignore="NewApi">false</item>
+        <!--Dark Theme Status-->
+
+        <!--StatusBar-->
+        <!--Change StatusBar Color-->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!--Show Content Inverted Color-->
+        <item name="android:windowLightStatusBar">true</item>
+        <!--Transparent StatusBar-->
+        <item name="android:windowTranslucentStatus">false</item>
+        <!--StatusBar-->
+
+        <!--NavigationBar-->
+        <!--Change BottomNavigationBar Color-->
+        <item name="android:navigationBarColor">@color/white_q</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <!--Transparent BottomNavigationBar-->
+        <item name="android:windowTranslucentNavigation">false</item>
+        <!--NavigationBar-->
+
+        <!--Screen background color-->
+        <item name="android:windowBackground">@color/white_q</item>
+        <!--Screen background color-->
+    </style>
+
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white_q</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
+        <!--        <item name="windowSplashScreenAnimationDuration">10</item>-->
+        <item name="postSplashScreenTheme">@style/Theme.Quotify</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white_q</item>
+        <item name="colorPrimaryVariant">@color/white_q</item>
+        <item name="colorOnPrimary">@color/white_q</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/gray_q</item>
+        <item name="colorSecondaryVariant">@color/gray_q</item>
+        <item name="colorOnSecondary">@color/black_q</item>
+
+        <!-- Status bar color. -->
+        <!--<item name="android:statusBarColor">@color/statusbar_q</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/white_q</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>-->
+
+
+        <!--THEME -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowFullscreen">false</item>
+
+        <!--Dark Theme Status - Disabled Dark mode-->
+        <item name="android:forceDarkAllowed" tools:ignore="NewApi">false</item>
+        <!--Dark Theme Status-->
+
+        <!--StatusBar-->
+        <!--Change StatusBar Color-->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!--Show Content Inverted Color-->
+        <item name="android:windowLightStatusBar">true</item>
+        <!--Transparent StatusBar-->
+        <item name="android:windowTranslucentStatus">false</item>
+        <!--StatusBar-->
+
+        <!--NavigationBar-->
+        <!--Change BottomNavigationBar Color-->
+        <item name="android:navigationBarColor">@color/white_q</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <!--Transparent BottomNavigationBar-->
+        <item name="android:windowTranslucentNavigation">false</item>
+        <!--NavigationBar-->
+
+        <!--Screen background color-->
+        <!--        <item name="android:windowBackground">@color/white_q</item>-->
+        <!--Screen background color-->
+    </style>
 </resources>

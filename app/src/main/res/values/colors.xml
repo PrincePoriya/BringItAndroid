@@ -2,4 +2,31 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="black_q">#000</color>
+    <color name="dark_gray_q">#333333</color>
+    <color name="gray_q">#666666</color>
+    <color name="light_gray_q">#bebebe</color>
+    <color name="extra_light_gray_q">#e6e6e6</color>
+    <color name="extra_extra_light_gray_q">#fafafa</color>
+    <color name="white_q">#fff</color>
+    <color name="alert_q">#ff0000</color>
+    <color name="statusbar_q">#fafafa</color>
+    <color name="toolbar_q">#fafafa</color>
+    <color name="bg_genera_q">#fff</color>
+    <color name="bg_edit_q">#fff</color>
+    <color name="panel_tool_q">#fafafa</color>
+    <color name="color_snackbar_yellow">#ffcc00</color>
+    <color name="black_trans_50">#80000000</color>
+    <color name="tag_outline_q">#bebebe</color>
+    <color name="transparent">#0000</color>
+    <color name="color_bf0b32">#BF0B32</color>
+    <color name="color_f7f7f7_bg">#f7f7f7</color>
+
+    <color name="color_99000000">#666</color><!--dialog desc-->
+    <color name="color_de000000">#000</color><!--dialog title-->
+    <color name="color_999999">#999999</color><!--dialog title-->
+
+    <color name="snap_line_edit_area">#000000</color>
+    <color name="snap_line_color">#FF5A5F</color>
 </resources>
