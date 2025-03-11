@@ -1,5 +1,6 @@
 package com.android.bringit.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
 import com.android.bringit.R
@@ -88,6 +89,7 @@ class LoginActivity : BaseActivity() {
 
     private fun navigateToSignup() {
         // Navigate to Signup Activity or Fragment
+        startActivity(Intent(this@LoginActivity,SignupActivity::class.java))
     }
 }
 

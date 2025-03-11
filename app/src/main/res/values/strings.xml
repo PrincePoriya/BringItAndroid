@@ -5,4 +5,9 @@
     <string name="str_login_here">Login here.</string>
     <string name="str_don_t_have_an_account_signup">Don’t have an account?</string>
     <string name="str_access_your_controls">Access your controls</string>
+    <string name="already_have_an_account_login">Already have an account?<font color='#000000'>Login</font></string>
+    <string name="to_get_starting">To get starting</string>
+    <string name="create_new_account">Create new account.</string>
+    <string name="check_here_to_indicate_that_you_have_read_and_agree_to_the_terms_conditions"><![CDATA[Check here to indicate that you have read and agree to the terms & conditions]]></string>
+    <string name="i_ve_read_and_accept_also_privacy_policy">I’ve read and accept also privacy policy</string>
 </resources>

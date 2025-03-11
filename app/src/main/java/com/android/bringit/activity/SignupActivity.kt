@@ -1,17 +1,29 @@
 package com.android.bringit.activity
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import com.android.bringit.R
+import com.android.bringit.base.BaseActivity
+import com.android.bringit.databinding.ActivitySignupBinding
 
-class SignupActivity : AppCompatActivity() {
+class SignupActivity : BaseActivity() {
 
+    private lateinit var binding: ActivitySignupBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_signup)
+        binding = ActivitySignupBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
+        setupListeners()
+    }
+
+    private fun setupListeners() {
+        binding.cardNextButton.setOnClickListener {
+            startActivity(Intent(this@SignupActivity,CreatePasswordActivity::class.java))
+        }
+
+        binding.txtLogin.setOnClickListener {
+            finish()
+        }
     }
 }
