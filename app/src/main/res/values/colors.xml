@@ -22,6 +22,7 @@
     <color name="transparent">#0000</color>
     <color name="color_bf0b32">#BF0B32</color>
     <color name="color_f7f7f7_bg">#f7f7f7</color>
+    <color name="color_F1F1F1_bg">#F1F1F1</color>
 
     <color name="color_99000000">#666</color><!--dialog desc-->
     <color name="color_de000000">#000</color><!--dialog title-->

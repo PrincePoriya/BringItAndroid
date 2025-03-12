@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:paddingHorizontal="20dp"
     android:paddingVertical="16dp"
-    tools:context=".activity.SignupActivity">
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -92,7 +92,7 @@
                         app:cardUseCompatPadding="false">
 
                         <androidx.appcompat.widget.AppCompatEditText
-                            android:id="@+id/edtEmail"
+                            android:id="@+id/edtFirstName"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@null"
@@ -212,20 +212,47 @@
                 app:cardPreventCornerOverlap="false"
                 app:cardUseCompatPadding="false">
 
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/edtMobileNumber"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@null"
-                    android:fontFamily="@font/lexend_regular_400"
-                    android:hint="+91   |   Add mobile number"
-                    android:imeOptions="actionDone"
-                    android:inputType="textPassword"
-                    android:maxLines="1"
+                <LinearLayout
                     android:paddingHorizontal="16dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    android:textSize="15sp" />
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_gravity="center"
+                        android:id="@+id/txtCountryCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="+91"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_marginStart="15dp"
+                        android:layout_gravity="center"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_gravity="center"
+                        android:id="@+id/edtMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:hint="Add mobile number"
+                        android:maxLines="1"
+                        android:paddingHorizontal="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
 
             </androidx.cardview.widget.CardView>
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/tv_country_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:minWidth="35dp"
+        android:fontFamily="@font/lexend_regular_400"
+        android:textColor="@color/black"
+        android:text="+91"/>
+
+    <View
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="@color/black"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:id="@+id/tv_country_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:fontFamily="@font/lexend_regular_400"
+        android:textColor="@color/black"
+        android:text="India"/>
+
+</LinearLayout>
