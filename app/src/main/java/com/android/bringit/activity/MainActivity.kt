@@ -6,9 +6,10 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.android.bringit.R
+import com.android.bringit.base.BaseActivity
 import com.android.bringit.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private var isDeliverySelected = false
@@ -45,9 +46,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.cardUseYourCar.setOnClickListener {
             if(isDeliverySelected){
-                startActivity(Intent(this@MainActivity,DriverActivity::class.java))
-            }else{
                 startActivity(Intent(this@MainActivity,UserActivity::class.java))
+            }else{
+                startActivity(Intent(this@MainActivity,DriverActivity::class.java))
             }
         }
     }

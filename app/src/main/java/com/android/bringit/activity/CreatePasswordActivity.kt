@@ -3,10 +3,11 @@ package com.android.bringit.activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.android.bringit.base.BaseActivity
 import com.android.bringit.databinding.ActivityCreatePasswordBinding
 import com.google.android.material.snackbar.Snackbar
 
-class CreatePasswordActivity : AppCompatActivity() {
+class CreatePasswordActivity : BaseActivity() {
 
     private lateinit var binding: ActivityCreatePasswordBinding
 
