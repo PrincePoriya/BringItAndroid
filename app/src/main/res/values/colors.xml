@@ -23,6 +23,7 @@
     <color name="color_bf0b32">#BF0B32</color>
     <color name="color_f7f7f7_bg">#f7f7f7</color>
     <color name="color_F1F1F1_bg">#F1F1F1</color>
+    <color name="color_EEEEEE_bg">#EEEEEE</color>
 
     <color name="color_99000000">#666</color><!--dialog desc-->
     <color name="color_de000000">#000</color><!--dialog title-->
@@ -31,4 +32,6 @@
     <color name="snap_line_edit_area">#000000</color>
     <color name="snap_line_color">#FF5A5F</color>
     <color name="card_line_color">#1A002768</color>
+    <color name="color_002768_bg">#002768</color>
+    <color name="color_blue">#0B53BF</color>
 </resources>

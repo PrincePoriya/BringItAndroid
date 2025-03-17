@@ -35,10 +35,13 @@ class UserActivity : BaseActivity(), OnMapReadyCallback {
         }
 
         binding.cardSelectAddressButton.setOnClickListener {
-            startActivity(Intent(this@UserActivity,UserActivity::class.java))
+            startActivity(Intent(this@UserActivity,SelectCategoryActivity::class.java))
         }
 
         binding.crdUnSelectHome.setOnClickListener {
+
+
+
             binding.crdHome.visibility = View.VISIBLE
             binding.crdUnSelectHome.visibility = View.GONE
 

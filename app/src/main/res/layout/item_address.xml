@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/color_f7f7f7_bg"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="0dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp">
+
+        <ImageView
+            android:id="@+id/icSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/img_check_circle"
+            android:visibility="gone" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/icSelected"
+            android:fontFamily="@font/lexend_regular_400"
+            android:text="Home :"
+            android:textColor="@color/color_999999"
+            android:textSize="13sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLabel"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toLeftOf="@+id/imgCheck"
+            android:fontFamily="@font/lexend_regular_400"
+            android:text="Geb. 571, CargoCity Süd, 60549 Frankfurt am Main, Germany"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imgCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="7dp"
+            android:adjustViewBounds="true"
+            android:minHeight="90dp"
+            android:src="@drawable/img_unselect_delete" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

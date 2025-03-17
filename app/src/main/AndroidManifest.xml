@@ -23,6 +23,18 @@
         android:theme="@style/Theme.BringIT"
         tools:targetApi="31">
         <activity
+            android:name=".activity.RecipientDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ItemDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DeliveryDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SelectAddressActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SelectCategoryActivity"
             android:exported="false" />
         <activity

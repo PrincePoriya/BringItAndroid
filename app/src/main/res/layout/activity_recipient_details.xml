@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f7f7f7_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="16dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_arrow_back" />
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_bold_700"
+                android:text="Recipient Details."
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lexend_regular_400"
+                android:text="Email address"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="17dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/lexend_regular_400"
+                    android:hint="Add email address"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lexend_regular_400"
+                android:text="Floor &amp; Unit no."
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="17dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtFloor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/lexend_regular_400"
+                    android:hint="Add floor &amp; unit no."
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lexend_regular_400"
+                android:text="Contact Name*"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="17dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtContactName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/lexend_regular_400"
+                    android:hint="Add contact name"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lexend_regular_400"
+                android:text="Mobile number"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="17dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:paddingHorizontal="16dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_gravity="center"
+                        android:id="@+id/txtCountryCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="+91"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_marginStart="15dp"
+                        android:layout_gravity="center"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:background="@color/black"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_gravity="center"
+                        android:id="@+id/edtMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:hint="Add mobile number"
+                        android:maxLines="1"
+                        android:paddingHorizontal="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lexend_regular_400"
+                android:text="Note for driver"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="120dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="17dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edtOtherLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/lexend_regular_400"
+                    android:hint="Tap to add note..."
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNextButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/color_bf0b32"
+                app:cardCornerRadius="17dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lexend_regular_400"
+                    android:text="Confirm"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
