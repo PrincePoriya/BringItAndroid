@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_f7f7f7_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="16dp">
+
+    <RelativeLayout
+        android:id="@+id/rrHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_arrow_back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_below="@+id/rrHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lexend_regular_400"
+            android:text="Finalising your delivery details"
+            android:textColor="@color/color_999999"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_bold_700"
+            android:text="Confirming your delivery."
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_below="@+id/llMain"
+        android:layout_above="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_detail"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/cardView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular_400"
+            android:text="Delivery Details"
+            android:textColor="@color/color_999999"
+            android:textSize="13sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtSenderUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/lexend_regular_400"
+                    android:text="Home"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rrView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSenderUserName"
+                    android:layout_marginEnd="12dp">
+
+                    <ImageView
+                        android:id="@+id/icSelected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/img_subtract" />
+
+                    <View
+                        android:id="@+id/icView"
+                        android:layout_width="1dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/icSelected"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/dashed_line" />
+
+                    <ImageView
+                        android:layout_below="@+id/icView"
+                        android:id="@+id/icUnSelected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/img_blue" />
+
+                </RelativeLayout>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_toStartOf="@+id/icSenderRight"
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSenderUserName"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/rrView"
+                    android:fontFamily="@font/lexend_regular_400"
+                    android:text="Geb. 571, CargoCity Süd, 60549 Frankfurt am Main, Germany"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/txtSenderUserName"
+                    android:id="@+id/icSenderRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/img_right" />
+
+                <RelativeLayout
+                    android:layout_below="@id/txtAddress"
+                    android:layout_toEndOf="@+id/rrView"
+                    android:id="@+id/rrSwap"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_centerVertical="true"
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="@color/color_EEEEEE_bg"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_toStartOf="@+id/icRecRight"
+                    android:layout_toEndOf="@+id/rrView"
+                    android:layout_below="@id/rrSwap"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtRecipientUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="Home"
+                        android:textColor="@color/color_999999"
+                        android:textSize="13sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtRecipientAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="Geb. 571, CargoCity Süd, 60549 Frankfurt am Main, Germany"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/rrSwap"
+                    android:id="@+id/icRecRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/img_right" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

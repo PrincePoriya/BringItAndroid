@@ -265,6 +265,7 @@
             app:cardBackgroundColor="#EEEEEE"
             app:cardCornerRadius="17dp"
             app:cardElevation="0dp"
+            app:strokeWidth="0dp"
             app:cardPreventCornerOverlap="false"
             app:cardUseCompatPadding="false">
 
@@ -297,12 +298,14 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/crdConfirm"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="65dp"
             app:cardBackgroundColor="@color/color_bf0b32"
             app:cardCornerRadius="17dp"
             app:cardElevation="0dp"
+            app:strokeWidth="0dp"
             app:cardPreventCornerOverlap="false"
             app:cardUseCompatPadding="false">
 

@@ -15,6 +15,7 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -255,6 +256,19 @@
                     android:textSize="15sp" />
 
             </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_above="@+id/checkboxPrivacy"
+                android:id="@+id/checkbox_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save this address &amp; person details for future."
+                android:textSize="14sp"
+                android:textColor="@color/color_999999"
+                android:fontFamily="@font/lexend_regular_400"
+                android:button="@null"
+                android:drawableStart="@drawable/img_checkbox"
+                android:drawablePadding="10dp"/>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardNextButton"

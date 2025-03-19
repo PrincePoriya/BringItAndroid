@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f7f7f7_bg"
+    android:orientation="vertical"
+    tools:context=".activity.SignupActivity">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <RelativeLayout
+        android:id="@+id/rrMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_map_back" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_top_corners"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:padding="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="Order ID"
+                        android:textColor="@color/color_999999"
+                        android:textSize="13sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_below="@+id/txtOrder"
+                        android:id="@+id/txtOrderId"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="IN-2-OK-AA984ASCXASC951ACS89"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/imgCopy"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/img_content_copy" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/color_EEEEEE_bg"/>
+
+                <RelativeLayout
+                    android:padding="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgGreen"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/img_green" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtPickUp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/imgGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="Pick-up"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/txtPickUp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/imgGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="Driver is making a quick stop."
+                        android:textColor="@color/color_999999"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginHorizontal="17dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/color_EEEEEE_bg"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/img_chronic" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtTime"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/imgGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="06:19 min"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="remaining to pickup you package"
+                        android:textColor="@color/color_999999"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/color_EEEEEE_bg"/>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lexend_regular_400"
+                    android:text="Delivery Partner"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgAvtar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_avtar" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtDriverName"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/imgAvtar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="Dennis Lleno"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtDriverNumber"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/txtDriverName"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/imgAvtar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="0701 - 0705649"
+                        android:textColor="@color/color_999999"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/imgCall"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/img_call" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/color_EEEEEE_bg"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginHorizontal="17dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lexend_regular_400"
+                    android:text="Delivery Details"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtSenderUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="Home"
+                        android:textColor="@color/color_999999"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rrView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp">
+
+                        <ImageView
+                            android:id="@+id/icSelected"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/img_subtract" />
+
+                        <View
+                            android:id="@+id/icView"
+                            android:layout_width="1dp"
+                            android:layout_height="100dp"
+                            android:layout_below="@id/icSelected"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/dashed_line" />
+
+                        <ImageView
+                            android:layout_below="@+id/icView"
+                            android:id="@+id/icUnSelected"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/img_blue" />
+
+                    </RelativeLayout>
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_toStartOf="@+id/icSenderRight"
+                        android:id="@+id/txtAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtSenderUserName"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toEndOf="@+id/rrView"
+                        android:fontFamily="@font/lexend_regular_400"
+                        android:text="Geb. 571, CargoCity Süd, 60549 Frankfurt am Main, Germany"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/txtSenderUserName"
+                        android:id="@+id/icSenderRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/img_right" />
+
+                    <RelativeLayout
+                        android:layout_below="@id/txtAddress"
+                        android:layout_toEndOf="@+id/rrView"
+                        android:id="@+id/rrSwap"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_centerVertical="true"
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="2px"
+                            android:background="@color/color_EEEEEE_bg"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_toStartOf="@+id/icRecRight"
+                        android:layout_toEndOf="@+id/rrView"
+                        android:layout_below="@id/rrSwap"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtRecipientUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexend_regular_400"
+                            android:text="Home"
+                            android:textColor="@color/color_999999"
+                            android:textSize="13sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtRecipientAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/lexend_regular_400"
+                            android:text="Geb. 571, CargoCity Süd, 60549 Frankfurt am Main, Germany"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/rrSwap"
+                        android:id="@+id/icRecRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/img_right" />
+                </RelativeLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_margin="17dp"
+                    android:id="@+id/cardSelectAddressButton"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="65dp"
+                    app:cardBackgroundColor="#EEEEEE"
+                    app:cardCornerRadius="17dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false">
+
+                    <LinearLayout
+                        android:paddingHorizontal="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexend_regular_400"
+                            android:text="Total"
+                            android:textColor="@color/color_999999"
+                            android:textSize="15sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:gravity="end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lexend_regular_400"
+                            android:text="$ 197.80"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
