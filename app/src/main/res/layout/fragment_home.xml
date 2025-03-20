@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img_home_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular_400"
+            android:text="@string/tell_us"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_bold_700"
+            android:text="@string/where_you_want_to_go"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardHome"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="17dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lexend_regular_400"
+                android:text="@string/go_to_home"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardOffice"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="17dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lexend_regular_400"
+                android:text="@string/go_to_office"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardGoMall"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="17dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lexend_regular_400"
+                android:text="@string/go_to_mall"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

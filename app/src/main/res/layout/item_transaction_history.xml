@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular_400"
+            android:text="17 February 2025"
+            android:textColor="@color/color_999999"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/icCredited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_credited" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:id="@+id/txtCredited"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_regular_400"
+                android:text="@string/credited"
+                android:textColor="@color/color_48A949"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_regular_400"
+                android:text="$297.95"
+                android:textColor="@color/color_blue"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtTransactionID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular_400"
+            android:text="TC ID: 2578287258"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtTransactionDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular_400"
+            android:text="Lorem ipsum doner sumia #32156498 aemit text content. Lorem ipsum doner sumia aemit text content.Lorem ipsum doner sumia."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/color_EEEEEE_bg"/>
+</LinearLayout>

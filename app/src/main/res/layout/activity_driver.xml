@@ -1,10 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity.DriverActivity">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom_main"/>
+
+    <LinearLayout
+        android:background="@color/color_002768_bg"
+        android:id="@+id/ll_bottom_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/llHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:id="@+id/llImgHome"
+                    android:background="@drawable/selected_tab_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/ivHome"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/img_home_select"/>
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.004"
+                    android:text="@string/home"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/lexend_regular_400" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWallet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:id="@+id/llImgWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivWallet"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/img_wallet_unselect" />
+
+                </LinearLayout>
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.004"
+                    android:text="@string/wallet"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/lexend_regular_400"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHistory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:id="@+id/llImgHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivHistory"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/img_history_unselect" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.004"
+                    android:text="@string/history"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/lexend_regular_400" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:id="@+id/llImgProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/img_profile" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.004"
+                    android:text="@string/profile"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/lexend_regular_400"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

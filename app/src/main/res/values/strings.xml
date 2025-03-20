@@ -10,4 +10,18 @@
     <string name="create_new_account">Create new account.</string>
     <string name="check_here_to_indicate_that_you_have_read_and_agree_to_the_terms_conditions"><![CDATA[Check here to indicate that you have read and agree to the terms & conditions]]></string>
     <string name="i_ve_read_and_accept_also_privacy_policy">I’ve read and accept also privacy policy</string>
+    <string name="home">Home</string>
+    <string name="wallet">Wallet</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <string name="where_you_want_to_go">Where you want to go?</string>
+    <string name="tell_us">Tell us...!</string>
+    <string name="go_to_home">Go to Home</string>
+    <string name="go_to_office">Go to Office</string>
+    <string name="go_to_mall">Go to Mall</string>
+    <string name="available_balance">Available balance</string>
+    <string name="check_transaction_history">Check Transaction History</string>
+    <string name="transfer_to_account">Transfer to Account</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="credited">Credited</string>
 </resources>
